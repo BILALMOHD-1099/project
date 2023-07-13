@@ -39,11 +39,11 @@ const projectData = [
 
 const  Certificates=()=> {
 
-  const [seperatedValue, setSeperatedValue] = useState(1);
+  // const [seperatedValue, setSeperatedValue] = useState(1);
   const [hoveredValue,setHoveredValue]=useState(null)
-  function handleSeperate(currentId) {
-    setSeperatedValue(currentId);
-  }
+  // function handleSeperate(currentId) {
+  //   setSeperatedValue(currentId);
+  // }
   function handleHover(index){
     setHoveredValue(index)
   }
