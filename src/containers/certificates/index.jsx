@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import PageHeaderContent from '../../components/pageHeaderContent';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import ImageOne from '../../certi/img1.png';
-// import ImageTwo from '../../certi/img2.png';
+import ImageTwo from '../../certi/img2.png';
 import './style.scss';
 
 const projectData = [
@@ -39,7 +39,7 @@ const projectData = [
 
 const  Certificates=()=> {
 
-  // const [seperatedValue, setSeperatedValue] = useState(1);
+  const [seperatedValue, setSeperatedValue] = useState(1);
   const [hoveredValue,setHoveredValue]=useState(null)
   // function handleSeperate(currentId) {
   //   setSeperatedValue(currentId);

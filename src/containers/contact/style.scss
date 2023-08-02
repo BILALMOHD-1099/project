@@ -38,7 +38,7 @@
 
                 div{
                     position: relative;
-                    .inputName,.inputEmail,.inputPhone,.inputDescription{
+                    .inputName,.inputEmail,.inputPhone,.inputSubject,.inputDescription{
                         width:100% ;
                         border: 2px solid var(--yellow-theme-main-color);
                         padding: 16px 12px;
@@ -47,7 +47,7 @@
                         background-color: transparent;
                         color: var(--yellow-theme-sub-text-color);
                     }
-                    .nameLabel,.emailLabel,.phoneLabel,.descriptionLabel{
+                    .nameLabel,.emailLabel,.phoneLabel,.subjectLabel,.descriptionLabel{
                         font-weight: 500;
                         position: absolute;
                         top: 7px;
@@ -57,7 +57,7 @@
                         font-size: 16px;
                     }
 
-                    .inputName:focus,.inputEmail:focus,.inputPhone:focus,.inputDescription:focus{
+                    .inputName:focus,.inputEmail:focus,.inputPhone:focus,.inputSubject:focus,.inputDescription:focus{
                         outline: none;
                     }
 
@@ -67,8 +67,11 @@
                     .inputEmail:valid+.emailLabel,
                     .inputPhone:focus+.phoneLabel,
                     .inputPhone:valid+.phoneLabel,
+                    .inputSubject:focus +.subjectLabel,
+                    .inputSubject:valid +.subjectLabel,
                     .inputDescription:focus+.descriptionLabel,
                     .inputDescription:valid+.descriptionLabel
+                    
                     {
                         font-size: 18px;
                         top: -25px;

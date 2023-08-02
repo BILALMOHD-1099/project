@@ -2,19 +2,23 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import './style.scss';
 import { Animate } from 'react-simple-animate'; 
+import particles from '../../utils.js/particles';
+import { Link } from 'react-scroll';
 const  Home=()=> {
 
   const navigate = useNavigate();
   console.log(navigate);
 
-  const handleNavigateToContactMePage = () => {
+  // const handleNavigateToContactMePage = () => {
 
-    navigate('/contact');
+  //   navigate('/contact');
   
-  }
+  // }
     return (
+      
      <section id='home' className='home'>
       <div className="home__text-wrapper">
+        
         <h1>
           Hello , I'm Mohd Bilal Ahmed
           <br />
@@ -33,11 +37,13 @@ const  Home=()=> {
         transform:'translatex(0px)'
       }}>
       <div className="home__contact-me">
-      <button onClick={handleNavigateToContactMePage}>Hire Me</button>
+      <Link to="/contact" smooth={true} duration={200} offset={-50}>
+        <button>Hire Me</button>
+      </Link>
 
       </div>
       </Animate>
-
+      
       
      </section>
     )

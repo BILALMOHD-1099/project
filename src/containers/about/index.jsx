@@ -60,7 +60,7 @@ const  About=()=> {
       }}>
        
         <h3>Front End Developer</h3>
-        <img src={ImageEight} alt="" className="image8" />
+        <img src={ImageEight} alt="image" className="image8" />
         <p>{jobSummary}</p>
 
         </Animate>
