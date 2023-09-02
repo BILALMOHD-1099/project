@@ -2,8 +2,9 @@ import React, {useState} from 'react'
 import PageHeaderContent from '../../components/pageHeaderContent';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import ImageOne from '../../certi/img1.png';
-import ImageTwo from '../../certi/img2.png';
+// import ImageTwo from '../../certi/img2.png';
 import './style.scss';
+import { Animate } from 'react-simple-animate';
 
 const projectData = [
   {
@@ -61,6 +62,19 @@ const  Certificates=()=> {
       icon={<BsInfoCircleFill size={40}/>}
       />
       <div className="certificate__content">
+      <Animate
+          play
+          duration={1.5}
+          delay={1}
+          start={{
+            transform: 'translateX(-200px)',
+          }}
+          end={{
+            transform: 'translatex(0px)',
+          }}
+        >
+          <h3 className='contact__content__header-text'>My Certificates</h3>
+        </Animate>
         <ul className="certificate__content__filter">
           {/* {seperateData.map((item) => (
             <li

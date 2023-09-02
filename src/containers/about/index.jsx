@@ -45,6 +45,19 @@ const  About=()=> {
       />
       
       <div className="about__content">
+      {/* <Animate
+          play
+          duration={1.5}
+          delay={1}
+          start={{
+            transform: 'translateX(-200px)',
+          }}
+          end={{
+            transform: 'translatex(0px)',
+          }}
+        >
+          <h3 className='about__content__header-text'>About Me</h3><br />
+        </Animate> */}
 
         <div className='about__content__personalWrapper'>
           

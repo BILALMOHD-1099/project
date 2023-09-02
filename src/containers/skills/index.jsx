@@ -46,11 +46,11 @@ const Skills = () => {
         },
         {
           skillName: 'PYTHON',
-          image:ImageFourteen,
+          image: ImageFourteen,
         },
         {
           skillName: 'C++',
-          image:ImageFifteen,
+          image: ImageFifteen,
         },
       ],
     },
@@ -94,6 +94,7 @@ const Skills = () => {
                   <AnimateKeyframes
                     play
                     duration={1}
+                    key={`${item.label}-${skillItem.skillName}`}
                     keyframes={['opacity: 1', 'opacity: 0']}
                     iterationCount={1}
                   >

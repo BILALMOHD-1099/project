@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import './style.scss';
 import { Animate } from 'react-simple-animate'; 
-import particles from '../../utils.js/particles';
+// import particles from '../../utils.js/particles';
 import { Link } from 'react-scroll';
 const  Home=()=> {
 
@@ -19,7 +19,7 @@ const  Home=()=> {
      <section id='home' className='home'>
       <div className="home__text-wrapper">
         
-        <h1>
+        <h1 >
           Hello , I'm Mohd Bilal Ahmed
           <br />
           Front end Developer | <br />

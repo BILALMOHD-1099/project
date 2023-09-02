@@ -9,6 +9,8 @@ import ImageFive from '../../images/image5.png';
 import ImageSix from '../../images/image6.png';
 import ImageSeven from '../../images/image7.png';
 import './style.scss';
+import { Animate } from 'react-simple-animate';
+
 
 const projectData = [
   {
@@ -90,6 +92,19 @@ const Projects = () => {
     <section id="projects" className="projects">
       <PageHeaderContent headerText="My Projects" icon={<BsInfoCircleFill size={40} />} />
       <div className="projects__content">
+      {/* <Animate
+          play
+          duration={1.5}
+          delay={1}
+          start={{
+            transform: 'translateX(-200px)',
+          }}
+          end={{
+            transform: 'translatex(0px)',
+          }}
+        >
+          <h3 className='projects__content__header-text'>My Projects</h3>
+        </Animate> */}
         <ul className="projects__content__filter">
           {filterData.map((item) => (
             <li
